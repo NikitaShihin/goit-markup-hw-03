@@ -1,7 +1,5 @@
 /* base styles */
 
-
-
 *,
 *::before,
 *::after {
@@ -10,9 +8,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-
   color: #434455;
   background-color: #fff;
+
+  min-width: 1440px;
 
   /*    font-family: Roboto;
         font-size: 16px;
@@ -47,18 +46,11 @@ img {
   margin: 0 auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 /* Common styles */
 .team-title,
 .portfolio-title {
@@ -76,7 +68,6 @@ img {
 .container-nav {
   display: flex;
   align-items: center;
-
 }
 
 /* Reset styles */
@@ -100,13 +91,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  
 
   width: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right:  75px;
+  margin-right: 75px;
 }
 
 .header-logo-accent {
@@ -120,19 +110,16 @@ img {
   align-items: flex-start;
   gap: 40px;
   padding: 0 24px;
-  
 }
 
 .header-item {
-
 }
 
 .header-link {
+  display: block;
 
-display: block;
-
-padding-top: 24px;
-padding-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   color: var(--NAVY-BLUE, #2e2f42);
   /* Body Medium */
@@ -141,8 +128,6 @@ padding-bottom: 24px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   text-decoration: none;
-
-  
 }
 
 .header-link:hover,
@@ -163,12 +148,9 @@ padding-bottom: 24px;
 
   display: block;
   margin-left: auto;
-
-  
 }
 
 .address-list {
-
   display: flex;
   gap: 40px;
   padding: 24px 0;
@@ -194,31 +176,19 @@ padding-bottom: 24px;
 
 .main {
   background: var(--NAVY-BLUE, #2e2f42);
-
-  padding-top: 188px;
-  padding-right: 472px;
-  padding-bottom: 292px;
-  padding-left: 472px;
-  
-
-
-
 }
 
-/* .main-container{
-
+.main-container {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-
-
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .main-title {
   color: var(--WHITE, #fff);
   text-align: center;
   margin: 0 auto 48px;
-  
 
   /* H1 */
   font-size: 56px;
@@ -233,11 +203,10 @@ padding-bottom: 24px;
   color: var(--WHITE, #fff);
   background: var(--IRIS, #4d5ae5);
 
+  display: inline-flex;
   padding: 16px 32px;
-  margin-top: 48px;
-
-
-
+  align-items: flex-start;
+  gap: 10px;
   border-radius: 4px;
 
   /* Button Text */
@@ -264,10 +233,34 @@ button:focus {
   color: var(--NAVY-BLUE, #2e2f42);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .benefits-list {
+
+  display:flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: flex-start;
+
+
+  
 }
 
 .benefits-item {
+
+  /* width: 264px; */
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-caption {
@@ -278,6 +271,7 @@ button:focus {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -296,12 +290,40 @@ button:focus {
 }
 
 .team-title {
+
+  color: var(--NAVY-BLUE, #2E2F42);
+
+
+
+/* Header 2 */
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+margin-bottom: 72px;
+text-align: center;
+
 }
 
 .team-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+justify-content: center;
+align-items: center;
+gap: 32px;
+
+
+border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-item {
+
+  width: calc((100% - 24px * 3) / 4)
   background: var(--WHITE, #fff);
 }
 
@@ -311,6 +333,8 @@ button:focus {
 
 .team-caption {
   color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  margin-top: 32px;
 
   /* Header 3 */
   font-size: 20px;
@@ -321,7 +345,9 @@ button:focus {
 
 .team-text {
   color: var(--SLATE, #434455);
-
+  text-align: center;
+margin-top: 8px;
+padding-bottom: 32px;
   /* text */
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
