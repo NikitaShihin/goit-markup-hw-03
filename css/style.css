@@ -86,7 +86,7 @@ img {
 
 {
   display: flex;
-  justify-content: space-between
+  align-items: center;
 
 
 }
@@ -121,7 +121,6 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .header-item {
@@ -330,8 +329,9 @@ button:focus {
 
 }
 
-.team-item: first-child {
+.team-item: {
   border-radius: 0px 0px 4px 4px; 
+  background: var(--WHITE, #FFF);
 }
 
 
