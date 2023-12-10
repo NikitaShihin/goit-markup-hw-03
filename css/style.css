@@ -364,13 +364,16 @@ button:focus {
 
 .portfolio-title {
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px
+
+
 }
 
 .portfolio-item {
@@ -379,18 +382,18 @@ button:focus {
 
 .portfolio-picture {
   background: var(--WHITE, #fff);
+  
 }
 
 .portfolio-caption {
-  color: var(--NAVY-BLUE, #2e2f42);
 
-  padding-top: 16px;
-
-  /* H3 */
+  color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2; /* 120% */
-  letter-spacing: 0.02em;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+  text-align: left;
 }
 
 .portfolio-text {
@@ -400,6 +403,7 @@ button:focus {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   padding-top: 8px;
+ 
 }
 
 /* footer */
