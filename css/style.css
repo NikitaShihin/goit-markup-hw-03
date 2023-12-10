@@ -86,15 +86,13 @@ img {
 
 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  /* gap: 40px; */
-  padding: 24px 0;
+  justify-content: space-between
+
+
 }
 
 .header-list-item{
-  padding: 24px 0;
+  
 
 }
 .header-logo {
@@ -122,19 +120,18 @@ img {
 
 .header-list {
   display: flex;
-  align-items: center;
-  gap: 40px
- 
+  gap: 40px;
+  padding: 24px 0;
 }
 
 .header-item {
-  padding: 24px 0;
+
+  padding: 24px 0
   
 }
 
 .header-link {
-  display: block;
-  padding: 16px 32px;
+  display: block; 
 
   color: var(--NAVY-BLUE, #2e2f42);
   /* Body Medium */
@@ -324,14 +321,19 @@ button:focus {
   justify-content: center;
   align-items: center;
   gap: 24px;
-border-radius: 0px 0px 4px 4px;
   background :  var(--WHITE, #FFF);
   }
 
 .team-item {
   flex-basis: calc((100% - 72px) / 4 )
   
+
 }
+
+.team-item: first-child {
+  border-radius: 0px 0px 4px 4px; 
+}
+
 
 .team-content{
 
