@@ -93,6 +93,10 @@ img {
   padding: 24px 0;
 }
 
+.header-list-item{
+  padding: 24px 0;
+
+}
 .header-logo {
   font-family: 'Raleway', sans-serif;
   color: var(--IRIS, #4d5ae5);
@@ -120,10 +124,12 @@ img {
   display: flex;
   align-items: center;
   gap: 40px
+ 
 }
 
 .header-item {
-  padding: 24px 0 
+  padding: 24px 0;
+  
 }
 
 .header-link {
@@ -284,8 +290,12 @@ button:focus {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
   text-align: center;
+
+}
+.benefits-caption{
+  margin-bottom: 8px;
+
 }
 
 .benefits-text {
@@ -314,12 +324,12 @@ button:focus {
   justify-content: center;
   align-items: center;
   gap: 24px;
-
-}
+border-radius: 0px 0px 4px 4px;
+  background :  var(--WHITE, #FFF);
+  }
 
 .team-item {
-  flex-basis: calc((100% - 72px) / 4)
-  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 72px) / 4 )
   
 }
 
