@@ -124,14 +124,11 @@ img {
 }
 
 .header-item {
-  padding-top: 24px; 
-  padding-bottom: 24px;
   
 }
 
 .header-link {
   display: block; 
-
   color: var(--NAVY-BLUE, #2e2f42);
   /* Body Medium */
   font-size: 16px;
@@ -139,6 +136,8 @@ img {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 24px; 
+  padding-bottom: 24px;
 }
 
 .header-link:hover,
@@ -325,18 +324,26 @@ button:focus {
 
 .team-item {
   flex-basis: calc((100% - 72px) / 4 )
-  border-radius: 0px 0px 4px 4px; 
-  background: var(--WHITE, #FFF);
+ 
+  
   
 
 }
 
-.team-item: {
+.team-item {
+
+  
+
+  border-radius: 0px 0px 4px 4px; 
+  background: var(--WHITE, #FFF);
+  
  
 }
 
 
 .team-content{
+  
+  
 
   padding: 32px 0 
 
