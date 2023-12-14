@@ -74,7 +74,7 @@ img {
 /* header section */
 
 .header {
-  background: var(--WHITE, #fff);
+  background: #fff;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -104,7 +104,7 @@ img {
 
 .header-logo-accent {
   color: #2e2f42;
-  width: 71px;
+
   justify-content: center;
 }
 
